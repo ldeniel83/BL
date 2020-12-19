@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BL Array Generator</title>
+    
+    
+</head>
+<body>
+    <header>The surprising relation between multiplication and benford's law</header>
+
+    <div class="presentation"> This page will generate an array of 1 000 000 numbers (you can vizualize the array by pressing F12 and clicking on "console"), following the calculation formula that is written in the text field (In Javascript), then return the distribution percentage of first numbers in that array. It is meant as a demonstration of the importance of mutltiplication in a data-set that follows benford's law.</div>
+
+    <form id="formula" class="formulaForm">
+        <input  type="text" id="formula2" placeholder="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))" value="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))">
+        <input type="submit" value="Calculate" id="calButton">
+    </form>
+    <br>
+    <div class="pTable">
+        <div class="P1" id="per1">
+
+        </div>
+        <div class="P2" id="per2">
+
+        </div>
+        <div class="P3" id="per3">
+
+        </div>
+        <div class="P4" id="per4">
+
+        </div>
+        <div class="P5" id="per5">
+
+        </div>
+        <div class="P6" id="per6">
+
+        </div>
+        <div class="P7" id="per7">
+
+        </div>
+        <div class="P8" id="per8">
+
+        </div>
+        <div class="P9" id="per9">
+
+        </div>
+    </div>
+    <br>
+    <div><div class="sugFormulas">suggested formulas:</div>
+    <br>
+    <div>default - Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000)) </div>
+    <div>less accurate - Math.floor((((Math.random())*(Math.random()))*1000))</div>
+    <div>True random: - Math.floor((Math.random())*1000)</div>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

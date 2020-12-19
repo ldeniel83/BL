@@ -1,0 +1,39 @@
+body {
+    font-family: "Arial"
+}
+
+.formulaForm {
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+header {
+    font-size: 5em;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.pTable {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #303030;
+    border-radius: 15px;
+    max-width: 20vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    color:aliceblue;
+    padding-left: 2vw;
+}
+
+.presentation {
+    padding-bottom: 5vh;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sugFormulas {
+    font-size: 2em;
+}
