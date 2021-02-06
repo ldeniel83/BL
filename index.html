@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel = "stylesheet" type = "text/css" href = "reset.css" />
+
     <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BL Array Generator</title>
@@ -11,11 +14,11 @@
 <body>
     <header>The surprising relation between multiplication and benford's law</header>
 
-    <div class="presentation"> This page will generate an array of 1 000 000 numbers (you can vizualize the array by pressing F12 and clicking on "console"), following the calculation formula that is written in the text field (In Javascript), then return the distribution percentage of first digits of each number in that array. It is meant as a demonstration of the importance of mutltiplication in a data-set that follows benford's law.</div>
-
+    <div class="presentation"> This page will generate an array of 1 000 000 numbers (you can vizualize the array by pressing F12 and clicking on "console"), following the calculation formula that is written in the text field (In Javascript), then return the distribution percentage of first digit in that array. It is meant as a demonstration of the importance of mutltiplication in a data-set that follows benford's law.</div>
+<br>
     <form id="formula" class="formulaForm">
-        <input  type="text" id="formula2" placeholder="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))" value="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))">
-        <input type="submit" value="Calculate" id="calButton">
+        <input class="textField" type="text" id="formula2" placeholder="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))" value="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))">
+        <input class="calculateButton" type="submit" value="Calculate" id="calButton">
     </form>
     <br>
     <div class="pTable">
@@ -50,11 +53,23 @@
     <br>
     <div><div class="sugFormulas">suggested formulas:</div>
     <br>
-    <div>default - Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000)) </div>
-    <div>less accurate - Math.floor((((Math.random())*(Math.random()))*1000))</div>
-    <div>True random: - Math.floor((Math.random())*1000)</div>
-</div>
+    <div class="otherFormulas">
+        <div class="buttonContainer">
+            <button id="defaultButton" class="OFbutton">Default (BL)</button>
+            <div>- Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000)) </div>
+        </div>
+        <div class="buttonContainer">
+            <button id="lessAccurateButton" class="OFbutton">Less Accurate</button>
+            <div>- Math.floor((((Math.random())*(Math.random()))*1000))</div>
+        </div>
+        <div class="buttonContainer">
+            <button id="trueRandomButton" class="OFbutton">True Random</button>
+            <div>- Math.floor((Math.random())*1000)</div>
+        </div>
+    </div>
     
+</div>
+    <footer class="footerT">Disclaimer: this site has been created for educational pruposes, feel free to re-use any content</footer>
     <script src="index.js"></script>
 </body>
 </html>

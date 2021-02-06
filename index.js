@@ -125,13 +125,28 @@ function returnTextPer() {
     document.getElementById("per9").innerHTML = "9: "+nf9+"%";
 }
 
+function buttonListeners() {
+    document.getElementById("defaultButton").addEventListener("click", function() {
+        document.getElementById("formula2").value = "Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))";
+    })
+    
+    document.getElementById("lessAccurateButton").addEventListener("click", function() {
+        document.getElementById("formula2").value = "Math.floor((((Math.random())*(Math.random()))*1000))";
+    })
 
+    document.getElementById("trueRandomButton").addEventListener("click", function(){
+        document.getElementById("formula2").value = "Math.floor((Math.random())*1000)"
+    })
+
+    
+}
 
 function runBenfordLaw() {
     randomArray();
     truncateNumbers();
     blprocess();
     returnTextPer();
+    buttonListeners();
 }
 
 function calEventListener() {

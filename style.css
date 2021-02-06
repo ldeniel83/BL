@@ -28,12 +28,64 @@ header {
 }
 
 .presentation {
-    padding-bottom: 5vh;
-    text-align: center;
-    font-size: 2em;
+    padding-bottom: 3vh;
+    text-align: left;
+    font-size: 1.5em;
     font-weight: bold;
+    border: #303030;
+    border-style:solid;
+    border-radius: 15px;
+    padding-left: 2vw;
+    padding-top: 3vh;
+
 }
 
 .sugFormulas {
     font-size: 2em;
+}
+
+.textField{
+    border-radius: 15px;
+    height: 2em;
+    min-width: 70vw;
+    max-width: 70vw;
+    align-self: center;
+    background-color: #303030;
+    color:aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.calculateButton{
+    border-radius: 15px;
+    font-size: 1.5em;
+    max-width: 30vw;
+    align-self: center;
+    background: linear-gradient(rgb(0, 141, 0),rgb(0, 90, 0));
+    color:aliceblue;
+    height: 2em;
+}
+
+.buttonContainer{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.OFbutton{
+    border-radius:15px;
+    font-size: 1.5em;
+    color:aliceblue;
+    background: linear-gradient(rgb(0, 141, 0),rgb(0, 90, 0));
+}
+
+.footerT {
+
+    background-color: #303030;
+    color:aliceblue;
+    font-size: 1em;
+    max-height: 5vh;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    min-height: 5vh;
 }
