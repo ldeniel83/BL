@@ -22,7 +22,10 @@ var calInput= document.getElementById("formula2");
             // Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))
 
 //functions
-
+document.querySelector("form.voters").addEventListener('submit', function(e){
+        e.preventDefault();
+        countyVoteGeneration();
+    });
 
 // Election simulation
 
@@ -235,10 +238,7 @@ function countyVoteGeneration() {
     console.log("candidate1: "+nfe1c1+"% "+nfe2c1+"% "+nfe3c1+"% "+nfe4c1+"% "+nfe5c1+"% "+nfe6c1+"% "+nfe7c1+"% "+nfe8c1+"% "+nfe9c1+"%");
     console.log("candidate2: "+nfe1c2+"% "+nfe2c2+"% "+nfe3c2+"% "+nfe4c2+"% "+nfe5c2+"% "+nfe6c2+"% "+nfe7c2+"% "+nfe8c2+"% "+nfe9c2+"%");
 
-    document.querySelector("form.voters").addEventListener('submit', function(e){
-        e.preventDefault();
-        countyVoteGeneration();
-    });
+    
 
         //Now to format this into an html table:
 
