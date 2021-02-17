@@ -1,5 +1,14 @@
 body {
-    font-family: "Arial"
+    font-family: "Arial";
+    background-color: aliceblue;
+    line-height: 2em;
+}
+
+.betaTag{
+    position:absolute;
+    top:0;
+    left: 0;
+    color: red;
 }
 
 .formulaForm {
@@ -9,9 +18,14 @@ body {
 }
 
 header {
+    padding-top: 1em;
     font-size: 5em;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     text-align: center;
+    color:aliceblue;
+    background-color: #303030;
+    border-radius: 0px 0px 25% 25%;
+    margin-bottom: 5vh;
 }
 
 .pTable {
@@ -21,10 +35,20 @@ header {
     background-color: #303030;
     border-radius: 15px;
     max-width: 20vw;
+    min-width: 15vw;
     padding-bottom: 1vh;
     padding-top: 1vh;
     color:aliceblue;
-    padding-left: 2vw;
+    padding: 2vw;
+
+}
+
+.multWrapper {
+    display: flex;
+}
+
+.presWrapper{
+    align-self: center;
 }
 
 .presentation {
@@ -37,6 +61,8 @@ header {
     border-radius: 15px;
     padding-left: 2vw;
     padding-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
 }
 
@@ -56,6 +82,30 @@ header {
     font-size: 1.5em;
 }
 
+
+.nbVoters{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.electionSimDesc{
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.textField2{
+    border-radius: 15px;
+    height: 2em;
+    min-width: 30vw;
+    max-width: 30vw;
+    align-self: center;
+    background-color: #303030;
+    color:aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .calculateButton{
     border-radius: 15px;
     font-size: 1.5em;
@@ -66,6 +116,47 @@ header {
     height: 2em;
 }
 
+.voters{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.cPer{
+    padding: 1vh;
+}
+
+.elSimPer{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+
+}
+
+.tableAndPer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.countiesTable{
+    min-width: 35vw;
+}
+
+.simPerWrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.pTableC2 {
+    justify-content: right;
+}
+
+.finalDesc{
+    margin-top: 5vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
 .buttonContainer{
     display:flex;
     flex-direction:row;
@@ -78,6 +169,32 @@ header {
     background: linear-gradient(rgb(0, 141, 0),rgb(0, 90, 0));
 }
 
+
+
+
+.coutiesLiElement{
+    padding:2vw;
+
+}
+
+.countyName{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5vh;
+}
+.tableHeader{
+    border:solid;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #303030;
+    color:aliceblue;
+}
+.th,td,table{
+    border:solid;
+    border-color: #646464;
+}
+
+
 .footerT {
 
     background-color: #303030;
@@ -86,7 +203,8 @@ header {
     max-height: 5vh;
     width: 100%;
     text-align: center;
+    position: relative;
     bottom: 0px;
-    position:absolute;
     min-height: 5vh;
+    padding-top:1vh;
 }
