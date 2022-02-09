@@ -406,6 +406,25 @@ function calEventListener() {
     
 }
 
+//style functions
+
+    //slide-in
+
+
+const slideArray= document.querySelectorAll(".slideIn");
+
+window.onscroll= function blockSlider(){
+    for (i=0; i < slideArray.length; i++) {
+
+        let blockBottom = slideArray[i].getBoundingClientRect().bottom;
+
+        if (blockBottom < (window.innerHeight+slideArray[i].clientHeight/2)) {
+            slideArray[i].classList.add("slideInStart")
+        }
+    };
+};
+
+
 // executed
 calEventListener();
 runBenfordLaw();
