@@ -1,0 +1,314 @@
+body {
+    font-family: "Arial";
+    background-color: #303030;
+    line-height: 2.2vw;
+    overflow-x: hidden;
+}
+
+
+@keyframes fadeInAnim {
+    from {opacity: 0;}
+    to{opacity:1}
+}
+.fadeIn{
+    animation-duration: 2s;
+    animation-name: fadeInAnim;
+    animation-direction:linear;
+    animation-iteration-count:1;
+}
+
+.betaTag{
+    position:absolute;
+    top:0;
+    left: 0;
+    color: red;
+}
+
+.formulaForm {
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+header {
+    padding-top: 1em;
+    font-size: 6vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    color:aliceblue;
+    background-color: #202020;
+    margin-bottom: 5vh;
+}
+
+.whatIsBenfordsLaw{
+    position:fixed;
+    top:1.2vw;
+    right:3vw;
+    max-width: 30vw;
+    color:aliceblue;
+    background-color: #202020;
+    border-radius: 15px;
+    text-align: center;
+    height: 2.5vw;
+    overflow: hidden;
+    transition: height 1s;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: solid;
+    z-index: 9;
+}
+
+.whatIsBenfordsLawTitle{
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+.whatIsBenfordsLawText{
+    font-size: 1.5vw;
+}
+
+:hover.whatIsBenfordsLaw{
+   height: 28vw;
+}
+
+.pTable {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #404040;
+    border-radius: 15px;
+    max-width: 20vw;
+    min-width: 15vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    color:aliceblue;
+    padding: 2vw;
+    overflow: hidden;
+
+}
+
+.multWrapper {
+    display: flex;
+}
+
+.presWrapper{
+    align-self: center;
+}
+
+.presentation {
+    padding-bottom: 3vh;
+    text-align: left;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border: #404040;
+    border-style:solid;
+    border-radius: 15px;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: aliceblue;
+    margin-bottom: 3vw;
+
+}
+
+.otherFormulas{
+    color: aliceblue;
+    margin-bottom: 3vw;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sugFormulas {
+    font-size: 2em;
+    margin-top: 1vw;
+    color: aliceblue;
+    margin-left: 3vw;
+    text-decoration: underline;
+}
+
+.textField{
+    border-radius: 15px;
+    height: 2em;
+    min-width: 70vw;
+    max-width: 70vw;
+    align-self: center;
+    background-color: #202020;
+    color:aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.nbVoters{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+table{
+    color: aliceblue;
+}
+
+.electionSimDesc{
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.textField2{
+    border-radius: 15px;
+    height: 2em;
+    min-width: 30vw;
+    max-width: 30vw;
+    align-self: center;
+    background-color: #202020;
+    color:aliceblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.calculateButton{
+    margin-top: 2vw;
+    border-radius: 2px;
+    font-size: 1.5em;
+    max-width: 30vw;
+    align-self: center;
+    background: #404040;
+    color:aliceblue;
+    height: 2em;
+}
+
+@keyframes buttonHoverGrow{
+    from {
+        transform:scale(1,1)
+    }
+    to {
+        transform: scale(1.1,1.1);
+    }
+
+}
+
+:hover.calculateButton{
+    animation-duration: 1s;
+    animation-name: buttonHoverGrow;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+}
+
+.voters{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.cPer{
+    padding: 1vh;
+}
+
+.elSimPer{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+
+}
+
+.tableAndPer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.countiesTable{
+
+}
+
+.simPerWrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.pTableC2 {
+    justify-content: right;
+}
+
+.finalDesc{
+    margin-top: 5vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+.buttonContainer{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.OFbutton{
+    border-radius:2px;
+    font-size: 1.5em;
+    color:aliceblue;
+    background: #404040;
+}
+
+:hover.OFbutton{
+    animation-duration: 1s;
+    animation-name: buttonHoverGrow;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+}
+
+
+.coutiesLiElement{
+    font-size: 1.5vw;
+
+}
+
+.countyName{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0.5vh;
+    color: aliceblue;
+}
+.tableHeader{
+    border:solid;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background-color: #303030;
+    color:aliceblue;
+}
+.th,td,table{
+    border:solid;
+    border-color: #646464;
+}
+
+
+.footerT {
+
+    background-color: #202020;
+    color:aliceblue;
+    font-size: 1em;
+    max-height: 5vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    min-height: 5vh;
+    padding-top:1vh;
+}
+
+.slidRight{
+transform: translateX(110%);
+}
+
+.slideIn{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.slideIn.slideInStart{
+    opacity:1;
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    transform: translateX(0%);
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "reset.css" />
+
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BL Array Generator</title>
+    
+    
+</head>
+<body>
+
+    <div class="whatIsBenfordsLaw">
+        <div class="whatIsBenfordsLawTitle">What is Benford's Law?</div>
+        <div class="whatIsBenfordsLawText">Benford's law, also known as the Newcomb–Benford law, the law of anomalous numbers, or the first-digit law, is an observation that in many real-life sets of numerical data, the leading digit is likely to be small. In sets that obey the law, the number 1 appears as the leading significant digit about 30 % of the time, while 9 appears as the leading significant digit less than 5 % of the time. If the digits were distributed uniformly, they would each occur about 11.1% of the time.</div>
+    </div>
+
+    <p class="betaTag">[BETA VERSION]</p>
+    <header>Benford's Law and Electoral Data </header>
+
+    <div class="presentation fadeIn"> The goal of this webpage is to explain the mathematical properties behind Benford's Law, and the reasons why it cannot be relied upon to detect electoral fraud. First, we will generate an array of 1 000 000 numbers (you can vizualize the array by pressing F12 and clicking on "console"), following the calculation formula that is written in the text field (In Javascript), then return the distribution percentage of first digits in that array. It is meant as a demonstration of the importance of mutltiplication in a data-set that follows benford's law.</div>
+    <form id="formula" class="formulaForm">
+        <input class="textField" type="text" id="formula2" placeholder="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))" value="Math.floor(((Math.random())*((Math.random())*(Math.random()))*1000))">
+        <input class="calculateButton" type="submit" value="Calculate" id="calButton">
+    </form>
+
+    <div class="sugFormulas">suggested formulas:</div>
+
+    <div class="otherFormulas">
+        <div class="buttonContainer">
+            <button id="defaultButton" class="OFbutton">Default (BL)</button>
+        </div>
+        <div class="buttonContainer">
+            <button id="lessAccurateButton" class="OFbutton">Less Accurate</button>
+        </div>
+        <div class="buttonContainer">
+            <button id="trueRandomButton" class="OFbutton">True Random</button>
+        </div>
+    </div>
+    
+    <div class="multWrapper">
+        <div class="pTable">
+            <div class="P1" id="per1">
+
+            </div>
+            <div class="P2" id="per2">
+
+            </div>
+            <div class="P3" id="per3">
+
+            </div>
+            <div class="P4" id="per4">
+
+            </div>
+            <div class="P5" id="per5">
+
+            </div>
+            <div class="P6" id="per6">
+
+            </div>
+            <div class="P7" id="per7">
+
+            </div>
+            <div class="P8" id="per8">
+
+            </div>
+            <div class="P9" id="per9">
+
+            </div>
+        </div>
+        <div class="presWrapper">
+            <p class="presentation slidRight slideIn">As you can see, just by multiplying random numbers with each other, we can achieve a distribution of First Digits that follows Benford's Law. But what happens if we change the formula used for the generation of this data-set? Find out yourself thanks to the three different formulas i've provided, or write your own formula in the above text field.</p>
+        </div>
+    </div>
+
+    
+    
+
+<div class= "electionSim">
+    
+    <p class="electionSimDesc presentation  slidRight slideIn">
+        Now how about diving a little deeper in the matter? Let's actually simulate an election and see what we can learn from it. The table bellow is the product of this simulation. What happens in the program is fairly simple: We have a list of 83 counties (Michigan counties, for the purpose of the demonstration) for each county, we will generate a number of voter between 0 and whatever number you want to type in the text field (By default, 20 000 max. voters per county). Once we have our voters, we'll have to make them vote and distribute their ballots between each candidate. For the purpose of this exemple, the first candidate will recieve about 46% of the votes, while the second will recieve the remaining 54%. As previously, we will return the distribution percentage of each first digit to observe if this data-set follows Benford's Law.
+    </p>
+
+    <form class="voters , formulaForm" id="voterNumberForm" >
+        <p class="nbVoters">Number of voters:</p>
+        <input type="text" placeholder="number of voters: 20000" value="20000" class="textField2" id="voterNumber">
+        <input class="calculateButton" type="submit" value="Apply" id="voterNumberButton">
+    </form>
+
+
+    <div class="tableAndPer">
+        <table class="countiesTable" id="countiesResults">
+            <tr class="tableHeader">
+                <td> Counties </td>
+                <td> Candidate 1 </td>
+                <td> Candidate 2 </td>
+            </tr>
+
+        </table>
+        
+        <div class="simPerWrapper">
+
+            <div class="elSimPer">
+            
+                <div class="pTable">
+                    <p class="cPer">Candidate 1:</p>
+                    
+                    <div class="Pc1-1" id="perC1-1">
+            
+                    </div>
+                    <div class="Pc1-2" id="perC1-2">
+            
+                    </div>
+                    <div class="Pc1-3" id="perC1-3">
+            
+                    </div>
+                    <div class="Pc1-4" id="perC1-4">
+            
+                    </div>
+                    <div class="Pc1-5" id="perC1-5">
+            
+                    </div>
+                    <div class="Pc1-6" id="perC1-6">
+            
+                    </div>
+                    <div class="Pc1-7" id="perC1-7">
+            
+                    </div>
+                    <div class="Pc1-8" id="perC1-8">
+            
+                    </div>
+                    <div class="Pc1-9" id="perC1-9">
+            
+                    </div>
+                </div>
+
+                <div class="pTable , pTableC2">
+                    <p class="cPer">Candidate 2:</p>
+                    
+                    <div class="Pc2-1" id="perC2-1">
+            
+                    </div>
+                    <div class="Pc2-2" id="perC2-2">
+            
+                    </div>
+                    <div class="Pc2-3" id="perC2-3">
+            
+                    </div>
+                    <div class="Pc2-4" id="perC2-4">
+            
+                    </div>
+                    <div class="Pc2-5" id="perC2-5">
+            
+                    </div>
+                    <div class="Pc2-6" id="perC2-6">
+            
+                    </div>
+                    <div class="Pc2-7" id="perC2-7">
+            
+                    </div>
+                    <div class="Pc2-8" id="perC2-8">
+            
+                    </div>
+                    <div class="Pc2-9" id="perC2-9">
+            
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <p class="finalDesc  presentation slidRight slideIn">
+                As you can see, the results are rather erratic. Don't hesitate to press "Apply" multiple times to observe the variation between each generation. We only have 83 numbers to analyse for each candidate, so you will see a much greater variation than you did on the previous data-set, which generated 1 000 000 numbers (Fitting a table with 1 000 000 counties on a web-page would be rather complicated, as you can probably understand). Nonetheless, the result is very clear, we end up with a rather homogeneous distribution of first digits that does not follow Benford's Law's predictions. But that isen't all, let's go a little deeper, try to change the number of voters from 20 000 to 10 000, and observe the percentages. Done? Odd isen't it, now we have a distribution of first digits that favors digits between 1 and 5. Why is that? Well, we are splitting these votes between two candidates, just about 50-50, So if we get 10 000 voters in a county, our candidates will get about 5000 votes each, it is therefore much less likelly that we would have numbers that start with a 6,7,8 or 9, than it is to have numbers that start with a 1,2,3,4 or 5, as these possibilities only represent 500 numbers (from 500 to 999) out of the average maximum of 5000 avaliable. This is another major aspect of why Benford's law cannot be relied upon to detect electoral fraud, as the number of voter in a county and the percentage of distribution between candidates is the one aspect that will dictate the first digit of the resulting number.
+            </p>
+        </div>    
+    </div>
+        
+    </div>
+
+    
+</div>
+
+    <footer class="footerT">Disclaimer: this site has been created for educational pruposes, feel free to re-use any content</footer>
+    <script src="index.js"></script>
+</body>
+</html>
